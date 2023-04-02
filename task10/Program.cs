@@ -9,24 +9,23 @@ void task1()
 {
     Console.WriteLine("Введите число от 100 до 999:");
     int number = int.Parse(Console.ReadLine());
-   // Console.WriteLine($"Вторая цифра числа { SecondNumber(number)} ");
+    
 
-if(number>999 )
-System.Console.WriteLine("Вы ввели не трехзначное число");
-
-    int SecondNumber(int number)
+    if (number > 100 && number <= 999)
+    
     {
         int secondnum = number / 10;
         int secondn = secondnum % 10;
-        return secondn;
+      
 
+
+
+        Console.WriteLine($"Вторая цифра числа {secondn}");
     }
    
-Console.WriteLine($"Вторая цифра числа { SecondNumber(number)}");
-
- if( number <100)
-{
-    System.Console.WriteLine($"Вы ввели не трехзначное число");
-}
+    else
+    {
+        System.Console.WriteLine($"Вы ввели не трехзначное число");
+    }
 }
 

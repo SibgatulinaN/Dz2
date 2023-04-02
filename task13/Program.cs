@@ -9,17 +9,15 @@
     Console.WriteLine("Введите число : ");
     int number=int.Parse(Console.ReadLine());
 
-
- if (number > 100 && number <1000)
-{
-    int result = number % 10;
-    System.Console.WriteLine(result);
-} 
-
 if (number < 99)
 {
     System.Console.WriteLine("Третьей цифры нет!");
 }
+ else if (number >= 100 && number <1000)
+{
+    int result = number % 10;
+    System.Console.WriteLine(result);
+} 
 
 else if (number >999)
 
@@ -27,21 +25,10 @@ else if (number >999)
     while (number > 999)
     {
        number= number /=10;
+    }
         int a = number % 10;
             
 System.Console.WriteLine($"Третья цифра {a}");
 }
-}
 
- 
 
-/* int CetNum(int number);
-{ 
-while (number < 1000)
-{
-       number= number /=10;
-}
-return number % 10;
-}
-System.Console.WriteLine("{GetNum}");
-} */
